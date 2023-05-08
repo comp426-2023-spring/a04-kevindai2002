@@ -2,7 +2,7 @@
 
 import minimist from "minimist";
 import express from 'express';
-import { play_game } from "./lib/rpsls";
+import { play_game } from "../lib/rpsls";
 
 const port = minimist(process.argv.slice(2)).port || 5000;
 const app = express();
