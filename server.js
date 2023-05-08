@@ -25,12 +25,12 @@ app.get('/app', function(req, res) {
 
 //Play RPS
 app.get('/app/rps', function(req, res) {
-    res.status(200).send(JSON.stringify(play_game(rps_choices,req)));
+    res.status(200).send(JSON.stringify(play_game(rps_choices)));
 });
 
 //Play RPSLS
 app.get('/app/rpsls', function(req, res) {
-    res.status(200).send(JSON.stringify(play_game(rpsls_choices,req)));
+    res.status(200).send(JSON.stringify(play_game(rpsls_choices)));
 });
 
 //Play RPS against an opponent (URLEncoded data body)
